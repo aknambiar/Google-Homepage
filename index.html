@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <title>Google</title>
+</head>
+<body>
+    <div class="desktop">
+        <header class="header-footer">
+            <nav>
+                <a href="https://about.google/">About</a>
+                <a href="https://store.google.com/">Store</a>
+            </nav>
+            <nav>
+                <a href="https://mail.google.com/">Gmail</a>
+                <a href="https://images.google.com/">Images</a>
+                <details id="drawer-symbol">
+                    <summary>&#8942;&#8942;&#8942;</summary>
+                    <div class="dropdown">
+                        <embed type="text/html" src="dropdown.html" width=100% height=100%>
+                    </div>
+                </details>
+
+                <a class="btn btn-header" href="https://accounts.google.com/">Sign in</a>
+            </nav>
+        </header>
+
+        <section class="main">
+            
+            <img id="logo" src="assets/images/logo.png">
+
+            <div class="search-box">
+                <img src="assets/images/search.svg">
+                
+                <form id="search-bar" action="https://www.google.com/search">
+                    <input type="text" name="q">
+                </form>
+                
+                <img src="assets/images/mic.svg">
+                <img src="assets/images/cam.svg">
+            </div>
+            
+            <nav>
+                <button  class="btn" form="search-bar" type="submit">Google Search</button>
+                <button class="btn" form="search-bar" type="submit">I'm Feeling Lucky</button>
+            </nav>
+            
+        </section>
+
+        <footer class="header-footer">
+            <p>Carbon neutral since 2007</p>
+
+            <section>
+                <nav>
+                    <a href="https://ads.google.com/intl/en_in/home/">Advertising</a>
+                    <a href="https://www.google.com/services/">Business</a>
+                    <a href="https://www.google.com/search/howsearchworks/">How Search works</a>
+                </nav>
+                <nav>
+                    <a href="https://policies.google.com/privacy">Privacy</a>
+                    <a href="https://policies.google.com/terms">Terms</a>
+                    <a href="https://www.google.com/preferences">Settings</a>
+                </nav>
+            </section>
+
+        </footer>
+    </div>
+
+
+    <div class="mobile">
+        <header class="header-footer mobile-header">
+            <nav>
+                <a href="https://about.google/">ALL</a>
+                <a href="https://images.google.com/">IMAGES</a>
+            </nav>
+            <nav>
+                <details id="drawer-symbol">
+                    <summary>&#8942;&#8942;&#8942;</summary>
+                    <div class="dropdown">
+                        <embed type="text/html" src="dropdown.html" width=100% height=100%>
+                    </div>
+                </details>
+
+                <a class="btn btn-header" href="https://accounts.google.com/">Sign in</a>
+            </nav>
+
+        </header>
+
+        <section class="main">
+            <img id="mobile-logo" src="assets/images/logo.png">
+
+            <div class="search-box">
+                <img src="assets/images/search.svg">
+                
+                <form id="search-bar" action="https://www.google.com/search">
+                    <input type="text" name="q">
+                </form>
+            </div>
+
+            <section class="trending">
+                <aside>
+                    <h1>Trending searches</h1>
+                    <a href="https://images.google.com/">&#8942;</a>
+                </aside>
+                <iframe scrolling="no" style="border:none;" width="640" height="330" src="http://www.google.com/trends/fetchComponent?hl=en-US&q=danbo+robot,danbo+amazon,danbo+yotsuba &cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=640&h=330"></iframe>
+            </section>
+
+        </section>
+
+    </div>
+    
+</body>
+</html>
