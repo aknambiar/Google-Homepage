@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  ========================================
+  CSS Start
+  ========================================
+*/
+ 
+body {
+    font-family: "Roboto" , sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.divider {
+    border: 1px solid rgb(225,225,225);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:95px 95px 95px;
+    /* grid-template-rows: 33% 33% 33%; */
+    /* gap: 30px; */
+    overflow: scroll;
+ }
+
+ .grid-item {
+    padding: 5 15px;
+    margin: 5px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .grid-item:hover {
+    background-color: aliceblue;
+ }
+
+ .grid-item h1 {
+    max-width: 10ch;
+    margin: 7px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
+
+ .grid-item:hover h1 {
+    white-space: normal; 
+    overflow: visible;
+ }
+
+ .sprite {
+    background-image:url('images/sprites.png');
+    background-size: 50px;
+    height:50px;
+    width:50px;
+    background-color:transparent;
+    background-repeat:no-repeat;
+    display:block;
+  }
+
+  #img_1 {
+    background-position:0px -50px;
+  }
+  
+  #img_2 {
+    background-position:0px -1775px;
+  }
+
+  #img_3 {
+    background-position:0px -1505px;
+  }
+
+  #img_4 {
+    background-position:0px -158px;
+  }
+
+  #img_5 {
+    background-position:0px -860px;
+  }
+
+  #img_6 {
+    background-position:0px -1076px;
+  }
+
+  #img_7 {
+    background-position:0px -2420px;
+  }
+
+  #img_8 {
+    background-position:0px -1128px;
+  }
+
+  #img_9 {
+    background-position:0px -2155px;
+  }
+
+  #img_10 {
+    background-position:0px -648px;
+  }
+
+  #img_11 {
+    background-position:0px -432px;
+  }
+
+  #img_12 {
+    background-position:0px -216px;
+  }
+
+  #img_13 {
+    background-position:0px -594px;
+  }
+
+  #img_14 {
+    background-position:0px -756px;
+  }
+
+  #img_15 {
+    background-position:0px -1617px;
+  }
+
+  #img_16 {
+    background-position:0px -1289px;
+  }
+
+  #img_17 {
+    background-position:0px -1451px;
+  }
+
+  #img_18 {
+    background-position:0px -1937px;
+  }
+
+  #img_19 {
+    background-position:0px -697px;
+  }
+
+  #img_20 {
+    background-position:0px -108px;
+  }
+
+  #img_21 {
+    background-position:0px -486px;
+  }
+
+  #img_22 {
+    background-position:0px -378px;
+  }
+
+  #img_23 {
+    background-position:0px -2366px;
+  }
+
+  #img_24 {
+    background-position:0px -1185px;
+  }
+
+  #img_25 {
+    background-position:0px -1835px;
+  }
+
+  #img_26 {
+    background-position:0px -2210px;
+  }
+
+  #img_27 {
+    background-position:0px -2315px;
+  }
+
+  #img_28 {
+    background-position:0px -1990px;
+  }
+
+  #img_29 {
+    background-position:0px -1023px;
+  }
+
+  #img_30 {
+    background-position:0px -1670px;
+  }
+
+  #img_31 {
+    background-position:0px -1560px;
+  }
+
+  #img_32 {
+    background-position:0px -2264px;
+  }
+
+  #img_33 {
+    background-position:0px -915px;
+  }
+
+  .btn {
+    text-decoration: none;
+    font-size: small;
+    margin: 20px 0;
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(200,200,200);
+    color: blue;
+    }
+
+    .btn:hover {
+        background-color: rgb(204, 218, 242);
+    }
