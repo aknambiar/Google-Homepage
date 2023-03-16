@@ -87,7 +87,7 @@ button, input[type="submit"], input[type="reset"] {
       display: none;
     }
     .mobile {
-        display: block;
+        display: flex;
     }
   }
 
@@ -167,6 +167,7 @@ summary {
 }
 
 .dropdown {
+    background-color: white;
     position: absolute;
     height: 448px;
     width: 328px;
@@ -187,7 +188,7 @@ summary {
 }
 
 .mobile .main {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #logo {
@@ -253,9 +254,15 @@ footer p {
 
 }
 
+footer nav {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
 footer a {
     color: rgb(112, 117, 121);
-    margin-right: 25px;
+    /* margin-right: 25px; */
 }
 
 footer a:hover {
@@ -268,8 +275,33 @@ footer section{
     justify-content: space-around;
 }
 
-.mobile-header {
-    font-family: 'Courier New', Courier, monospace;
+.mobile-header a {
+    color: gray;
+    
+    -webkit-text-stroke: 1px gray;
+}
+.mobile-header details[open] summary {
+    /* border: 0px; */
+    border-radius: 100%;
+    box-shadow: 2px 2px 0px 6px rgb(240,240,240);
+    background-color: rgb(240,240,240);
+}
+
+.mobile .btn-header {
+    max-height: 39px;
+    color: white;
+    -webkit-text-stroke: 0px gray;
+}
+
+#selected-pane {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    color: rgb(70,136,240);
+    -webkit-text-stroke: 1px rgb(70,136,240);
+    padding-bottom: 1px;
+    border-bottom: 2px solid rgb(70,136,240);
 }
 
 #mobile-logo {
@@ -278,13 +310,52 @@ footer section{
 }
 
 .trending{
-    margin-top: 30px;
     width: 85%;
 }
 
-.trending aside {
+.trending figcaption {
+    margin: 30px 0px;
     font-size: large;
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.trending figure {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.trending figure a {
+    color: black;
+    padding: 20px 0px 20px 50px;
+    border-bottom: 1px solid rgb(225,225,225);
+    background: url(images/trending.svg) no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px 17px;
+}
+
+.mobile footer{
+    border-top: 1px solid rgb(225,225,225);
+    font-weight: 350;
+    font-size: 15px;
+}
+
+.mobile footer section{
+    flex-direction: column;
+}
+
+.mobile footer nav {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.filler {
+    overflow: visible;
+    height: 30px;
+    width: 100vw;
+    border-bottom: 1px solid rgb(225,225,225);
 }
