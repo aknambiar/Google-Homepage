@@ -73,6 +73,7 @@ button, input[type="submit"], input[type="reset"] {
 .desktop,.mobile {
     height: 100vh;
     font-family: arial , sans-serif;
+    color: rgba(0,0,0,80%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -99,10 +100,11 @@ a {
 .header-footer {
     display: flex;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 10px;
 }
 header {
     justify-content: space-between;
+    padding: 0px 1px;
     /* margin-top: 10px; */
 }
 
@@ -113,8 +115,8 @@ header nav {
 }
 
 header nav a {
-    margin: 10px;
-    color: black;
+    margin: 8px 6px;
+    color: rgba(0,0,0,70%);
 }
 
 header nav a:hover {
@@ -122,11 +124,11 @@ header nav a:hover {
 }
 
 .btn {
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 8px 13px;
+    border-radius: 3px;
     background-color: rgb(248, 249,250);
-    color: black;
-
+    font-weight: 100;
+    letter-spacing: 0.02em;
 }
 
 .btn:hover {
@@ -134,13 +136,15 @@ header nav a:hover {
 }
 
 .btn-header {
+    display: flex;
     justify-content: center;
-    text-align: center;
-    min-width: 96px;
-    font-size: 14px;
+    align-items: center;
+    /* text-align: center; */
+    min-width: 75px;
+    font-size: 11px;
     background-color: rgb(36, 118, 229);
     color: white;
-    margin: 0px 10px;
+    margin: 0px;
 }
 
 .btn-header:hover {
@@ -155,12 +159,12 @@ summary {
 
 #drawer-symbol {
     cursor: pointer;
-    margin: 7px 10px;
+    margin: 6px 15px;
 }
 
 summary svg {
-    height: 18px;
-    fill: rgb(95, 99, 104);
+    height: 15px;
+    fill: #5f6368;
 }
 
 #drawer-symbol summary:hover {
@@ -188,7 +192,7 @@ summary svg {
     align-items: center;
 }
 .desktop .main {
-    margin-top: -100px;
+    margin-top: -140px;
 }
 
 .mobile .main {
@@ -196,21 +200,21 @@ summary svg {
 }
 
 #logo {
-    width: 260px;
-    padding-bottom: 30px;
+    width: 203px;
+    padding-bottom: 23px;
 }
 
 .search-box {
     align-items: center;
     /* margin: 10px; */
-    border: 1px solid rgb(225,225,225);
+    border: 1px solid rgba(225,225,225,87%);
     border-radius: 30px;
     display: flex;
-    height: 50px;
+    height: 34px;
     width: 100%;
-    max-width: 600px;
+    max-width: 435px;
     min-width: 400px;
-    padding: 0px 15px;
+    padding: 0px 5px;
 }
 
 .mobile .search-box {
@@ -219,17 +223,23 @@ summary svg {
 }
 
 .search-box:hover {
-    box-shadow: 0px 1px 2px 1px rgb(225,225,225);
+    box-shadow: 0px 1px 3px 1px rgba(225,225,225,87%);
 }
 
 .search-box img {
-    height: 25px;
-    margin: 0px 5px;
+    height: 18px;
+    margin: 0px 6px;
 }
 
 .search-box svg {
-    height: 22px;
+    height: 16px;
+    margin-left: 5px;
     fill: rgb(154, 160, 166);
+}
+
+.mobile .search-box svg {
+    height: 22px;
+    margin-left: 3px;
 }
 
 #search-bar {
@@ -244,22 +254,23 @@ input {
 }
 
 nav button {
-    margin-top: 30px;
-    margin-right: 15px;
+    margin-top: 20px;
+    margin-right: 2px;
+    font-size: x-small
 }
 footer {
     background-color: rgb(242, 242,242);
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     color: rgb(112, 117, 121);
 }
 
 footer p {
     padding-bottom: 30px;
-    padding-left: 20px;
+    padding-left: 15px;
     background: url("images/carbon.png") no-repeat;
-    background-size: 15px 15px;
+    background-size: 10px 10px;
 
 }
 
@@ -372,6 +383,10 @@ footer section{
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+#bottom-footer {
+    padding: 20px 60px;
 }
 
 .filler {
