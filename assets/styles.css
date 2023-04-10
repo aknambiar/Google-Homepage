@@ -102,6 +102,8 @@ a {
     font-weight: 400;
     font-size: 1.7vh;
 }
+
+
 header {
     justify-content: space-between;
     padding: 0px 1px;
@@ -165,6 +167,11 @@ summary {
 summary svg {
     height: 15px;
     fill: #5f6368;
+}
+
+.mobile summary svg {
+    margin-top: 2px;
+    height: 20px;
 }
 
 #drawer-symbol summary:hover {
